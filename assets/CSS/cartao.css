@@ -5,7 +5,7 @@
     padding: 1rem;
     border-radius: .5rem;
     width: 15rem;
-    box-shadow: .3rem .3rem 0,3rem 0.03rem #eee;
+    box-shadow: .3rem .3rem 0.3rem 0.03rem #eee;
 }
 
 .imagem-do-cartao {
@@ -76,4 +76,31 @@
 .botao-do-cartao:hover{
     background-color: #1818b0;
     color: white;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.01rem #ddd;
+}
+
+.botao-do-cartao:hover .icone-finalb {
+    opacity: 1;
+    color: green;
+}
+
+.icone-finalb {
+    width: 1rem;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    color: red;
+}
+
+.botao-do-cartao:hover .icone-finalc {
+    opacity: 1;
+    color: green;
+}
+
+.icone-finalc {
+    width: 1rem;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    color: red;
 }

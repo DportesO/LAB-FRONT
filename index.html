@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/login/estilo.css">
+    </link>
+    <script src="./assets/JS/login.js"></script>
+
+    <script src="https://kit.fontawesome.com/db7cfa0819.js" crossorigin="anonymous"></script>
+    <script src="./assets/JS/menu-hamburguer.js"></script>
+    <script src="https://kit.fontawesome.com/b581796bdd.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+
     <header>
         <div class="logo">W</div>
         <h1 class="titulo">Meu site de Notícias</h1>
+        <div class="menu-hamburguer" onclick="alternarVisualizacaoDoMenuLateral()">
+            <i id="icone" class="fa-solid fa-bars"></i>
+        </div>
     </header>
-    <section>
-        <nav>Menu Lateral</nav>
+    <div class="container">
+        <form>
+       
+    <div class="input-grupo">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Digite seu e-mail">
+    </div>
 
-        <main id="noticias" class="container">
+    <div class="input-grupo">
+        <i class="fas fa-lock"></i>
+        <input id="senha" type="password" placeholder="Digite sua senha">
+    </div>
+    <button onclick="verificarCredenciais(); return false;">
+        </button>
+        </form>
+        
 
-            <div class="cartao">
 
-                <img class="imagem-do-cartao" src="./assets/img/onibus.png">
+        <div class="links-auxiliares">
+            <a href="#">Esqueci minha senha</a>
+            <spam>-</spam>
+            <a href="#">Criar conta</a>
+        </div>
 
-                <section class="corpo-do-cartao">
-                    <h1 class="titulo-do-cartao">Mobilidade Urbana</h1>
-
-                    <p class="classificacao">
-                        <span class="categoria-da-noticia">Transporte</span>
-                        <span class="data-da-noticia">05/03/2026</span>
-                    </p>
-
-                    <p class="descricao-da-noticia">
-                        Prefeitura lança novo plano de Mobilidade Urbana. 
-                    </p>
-                    <p class="autor-da-noticia">Ana Maria Pires</p>
-                </section>
-
-                <a href="#" class="botao-do-cartao">Leia Mais</a>
-                
-            </div>
-        </main>
-    </section>
-    <footer>
-        &copy, Meu Site, 2026.
-    </footer>
 </body>
+
 </html>
