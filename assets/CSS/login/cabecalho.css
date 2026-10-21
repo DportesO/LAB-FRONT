@@ -5,12 +5,12 @@ header{
     padding: 0.5rem;
     align-items: center;
     align-content : center;
-    /* justify-content: center;  */
+    /* justify-content: center;  
     background-color: #252323;
-    color: #eee;
+    color: #eee;*/
 }
 .logo{
-    border: .2rem solid blue solid;
+    border: .1rem solid blue solid;
     background-color: blue;
     color: #eee;
     font-weight:bold;
@@ -27,6 +27,33 @@ header{
 .titulo{
     flex:1;
 }
+
+.container{
+    width: 30rem;
+    margin: auto;
+    padding: 2rem;
+    background-color: #252323;
+    color: #eee;
+    box-shadow: 0rem 0.8rem 2rem 0.1rem #0000004d;
+    border-radius: 0.5rem;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/*
 .menu-hamburguer{
     border-radius:100%;
     width: 1rem;
@@ -47,4 +74,4 @@ header{
 }
 .menu-hamburguer #icone:hover {
     color: white;
-}
+}/*
