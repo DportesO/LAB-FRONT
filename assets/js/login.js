@@ -3,30 +3,26 @@ import { usuario } from "./bd.js";
 const email = usuario.email;
 const senha = usuario.senha;
 
-function verificarCredencias() {
+function verificarCredenciais() {
     const emailInformado = document.getElementById("email").value;
     const senhaInformada = document.getElementById("senha").value;
 
     if (emailInformado === email) {
-        alert("E-mail informado corretamente");
-
+        alert("E-mail informado corretamente!");
         if (senhaInformada === senha) {
-            alert("Senha informada corretamente");
+            alert("Senha informada corretamente!");
             window.location = "home.html";
-        } else
+        } else {
             alert("Senha informada incorretamente!");
-    }
-    else
+        }
+    } else {
         alert("E-mail informado incorretamente!");
+    }
 }
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const botao = document.querySelector("button");
     botao.addEventListener("click", (e) => {
         e.preventDefault();
-        verificarCredencias();
-    });
-});
-
-/*
-  ALT + SHIFT + F
-*/
+        verificarCredenciais();
+    })
+})
