@@ -1,20 +1,23 @@
-const email = "admin@email.com";
-const senha = "1234";
+const email = usuario.email;
+const senha = usuario.senha;
 
-function verificarCredenciais() {
+function verificarCredencias() {
     const emailInformado = document.getElementById("email").value;
     const senhaInformada = document.getElementById("senha").value;
 
     if (emailInformado === email) {
-        alert("E-mail informadocorretamente.");
-        if (senhaInformada === senha) {
-            alert("Senha informada corretamente.");
-        window.location.href = "home.html";
+        alert("E-mail informado corretamente");
 
-        } else {
-            alert("Senha incorreta. Tente novamente.");
-        }
-    } else {
-        alert("E-mail incorreto. Tente novamente.");
+        if (senhaInformada === senha) {
+            alert("Senha informada corretamente");
+            window.location = "home.html";
+        } else
+            alert("Senha informada incorretamente!");
     }
+    else
+        alert("E-mail informado incorretamente!");
 }
+
+/*
+  ALT + SHIFT + F
+*/
