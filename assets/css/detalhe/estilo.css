@@ -1,0 +1,19 @@
+@import url("cabecalho.css");
+@import url("corpo.css");
+@import url("rodape.css");
+
+
+*{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0rem;
+    padding: 0rem;
+}
+
+
+body{
+    /* border: .2rem solid rgb(102, 255, 0); */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
