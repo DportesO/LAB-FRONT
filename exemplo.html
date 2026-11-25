@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="entrada" />
+
+    <ul>
+        <li class="item">Bola</li>
+        <li class="item">Casa</li>
+        <li class="item">Casamento</li>
+        <li class="item">Jardim</li>
+    </ul>
+
+    <script>
+        var entrada = document.getElementById("entrada");
+        entrada.onkeyup = function() {
+            var termo = entrada.value.toLowerCase().trim();
+            var itens = document.getElementsByTagName("li");
+            
+            for(var i = 0; i < itens.length; i++) {
+                var item = itens[i].innerHTML;
+                
+                if (item.toLowerCase().includes(termo)) {
+                    itens[i].style.display = "list-item";
+                } else {
+                    itens[i].style.display = "none";
+                }
+            }
+
+        }
+        
+        
+    </script>
+
+
+</body>
+</html>
